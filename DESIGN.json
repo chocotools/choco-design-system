@@ -1,0 +1,602 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-30T00:00:00Z",
+  "title": "Design System: Choco Factory Ledger",
+  "extensions": {
+    "colorMeta": {
+      "chocolate-deep": {
+        "role": "primary",
+        "displayName": "Deep Chocolate",
+        "canonical": "oklch(22% 0.05 18)",
+        "tonalRamp": [
+          "oklch(15% 0.03 18)",
+          "oklch(22% 0.05 18)",
+          "oklch(30% 0.06 18)",
+          "oklch(40% 0.07 18)",
+          "oklch(52% 0.08 18)",
+          "oklch(65% 0.06 18)",
+          "oklch(80% 0.04 18)",
+          "oklch(94% 0.02 18)"
+        ]
+      },
+      "chocolate-medium": {
+        "role": "primary",
+        "displayName": "Chocolate Medium",
+        "canonical": "oklch(25% 0.05 15)",
+        "tonalRamp": [
+          "oklch(15% 0.03 15)",
+          "oklch(25% 0.05 15)",
+          "oklch(35% 0.06 15)",
+          "oklch(45% 0.07 15)",
+          "oklch(58% 0.07 15)",
+          "oklch(72% 0.05 15)",
+          "oklch(85% 0.03 15)",
+          "oklch(95% 0.015 15)"
+        ]
+      },
+      "oompa-brown": {
+        "role": "secondary",
+        "displayName": "Oompa Brown",
+        "canonical": "oklch(46% 0.07 55)",
+        "tonalRamp": [
+          "oklch(20% 0.04 55)",
+          "oklch(30% 0.06 55)",
+          "oklch(46% 0.07 55)",
+          "oklch(58% 0.08 55)",
+          "oklch(70% 0.07 55)",
+          "oklch(80% 0.05 55)",
+          "oklch(89% 0.03 55)",
+          "oklch(96% 0.015 55)"
+        ]
+      },
+      "factory-wine": {
+        "role": "secondary",
+        "displayName": "Factory Wine",
+        "canonical": "oklch(35% 0.09 10)",
+        "tonalRamp": [
+          "oklch(20% 0.06 10)",
+          "oklch(28% 0.08 10)",
+          "oklch(35% 0.09 10)",
+          "oklch(48% 0.10 10)",
+          "oklch(62% 0.09 10)",
+          "oklch(76% 0.07 10)",
+          "oklch(88% 0.04 10)",
+          "oklch(96% 0.02 10)"
+        ]
+      },
+      "factory-heading": {
+        "role": "neutral",
+        "displayName": "Choco Factory Heading",
+        "canonical": "oklch(20% 0.025 50)",
+        "tonalRamp": [
+          "oklch(15% 0.015 50)",
+          "oklch(20% 0.025 50)",
+          "oklch(30% 0.035 50)",
+          "oklch(45% 0.04 50)",
+          "oklch(60% 0.035 50)",
+          "oklch(74% 0.025 50)",
+          "oklch(86% 0.015 50)",
+          "oklch(96% 0.008 50)"
+        ]
+      },
+      "golden": {
+        "role": "primary",
+        "displayName": "Golden Seal",
+        "canonical": "oklch(73% 0.13 80)",
+        "tonalRamp": [
+          "oklch(28% 0.06 80)",
+          "oklch(40% 0.09 80)",
+          "oklch(54% 0.12 80)",
+          "oklch(64% 0.13 80)",
+          "oklch(73% 0.13 80)",
+          "oklch(82% 0.10 80)",
+          "oklch(90% 0.06 80)",
+          "oklch(96% 0.025 80)"
+        ]
+      },
+      "golden-dim": {
+        "role": "primary",
+        "displayName": "Golden Dim",
+        "canonical": "oklch(64% 0.13 80)",
+        "tonalRamp": [
+          "oklch(25% 0.06 80)",
+          "oklch(38% 0.09 80)",
+          "oklch(50% 0.11 80)",
+          "oklch(64% 0.13 80)",
+          "oklch(74% 0.12 80)",
+          "oklch(83% 0.09 80)",
+          "oklch(91% 0.05 80)",
+          "oklch(97% 0.02 80)"
+        ]
+      },
+      "golden-light": {
+        "role": "primary",
+        "displayName": "Golden Light",
+        "canonical": "oklch(82% 0.13 85)",
+        "tonalRamp": [
+          "oklch(30% 0.06 85)",
+          "oklch(45% 0.10 85)",
+          "oklch(60% 0.13 85)",
+          "oklch(72% 0.13 85)",
+          "oklch(82% 0.13 85)",
+          "oklch(89% 0.09 85)",
+          "oklch(94% 0.05 85)",
+          "oklch(98% 0.02 85)"
+        ]
+      },
+      "factory-warm": {
+        "role": "tertiary",
+        "displayName": "Factory Warm Sienna",
+        "canonical": "oklch(50% 0.16 45)",
+        "tonalRamp": [
+          "oklch(22% 0.07 45)",
+          "oklch(35% 0.12 45)",
+          "oklch(50% 0.16 45)",
+          "oklch(62% 0.16 45)",
+          "oklch(74% 0.13 45)",
+          "oklch(84% 0.09 45)",
+          "oklch(91% 0.05 45)",
+          "oklch(97% 0.02 45)"
+        ]
+      },
+      "ledger-green": {
+        "role": "tertiary",
+        "displayName": "Ledger Green (Attested)",
+        "canonical": "oklch(45% 0.09 155)",
+        "tonalRamp": [
+          "oklch(22% 0.05 155)",
+          "oklch(32% 0.07 155)",
+          "oklch(45% 0.09 155)",
+          "oklch(58% 0.10 155)",
+          "oklch(70% 0.09 155)",
+          "oklch(81% 0.07 155)",
+          "oklch(90% 0.04 155)",
+          "oklch(97% 0.02 155)"
+        ]
+      },
+      "badge-verified": {
+        "role": "tertiary",
+        "displayName": "Verified Stamp Gold",
+        "canonical": "oklch(67% 0.12 75)",
+        "tonalRamp": [
+          "oklch(28% 0.06 75)",
+          "oklch(42% 0.09 75)",
+          "oklch(55% 0.11 75)",
+          "oklch(67% 0.12 75)",
+          "oklch(77% 0.11 75)",
+          "oklch(86% 0.08 75)",
+          "oklch(93% 0.05 75)",
+          "oklch(97% 0.02 75)"
+        ]
+      },
+      "badge-failed": {
+        "role": "tertiary",
+        "displayName": "Failed Rose-Wine",
+        "canonical": "oklch(38% 0.10 12)",
+        "tonalRamp": [
+          "oklch(20% 0.06 12)",
+          "oklch(28% 0.08 12)",
+          "oklch(38% 0.10 12)",
+          "oklch(50% 0.11 12)",
+          "oklch(64% 0.10 12)",
+          "oklch(78% 0.07 12)",
+          "oklch(89% 0.04 12)",
+          "oklch(97% 0.02 12)"
+        ]
+      },
+      "factory-bg": {
+        "role": "neutral",
+        "displayName": "Warm Cream Paper",
+        "canonical": "oklch(97% 0.025 95)",
+        "tonalRamp": [
+          "oklch(22% 0.015 95)",
+          "oklch(40% 0.02 95)",
+          "oklch(58% 0.025 95)",
+          "oklch(72% 0.025 95)",
+          "oklch(83% 0.025 95)",
+          "oklch(90% 0.025 95)",
+          "oklch(94% 0.025 95)",
+          "oklch(97% 0.025 95)"
+        ]
+      },
+      "factory-surface": {
+        "role": "neutral",
+        "displayName": "Cream Surface",
+        "canonical": "oklch(98% 0.02 90)",
+        "tonalRamp": [
+          "oklch(22% 0.012 90)",
+          "oklch(42% 0.018 90)",
+          "oklch(60% 0.02 90)",
+          "oklch(74% 0.02 90)",
+          "oklch(85% 0.02 90)",
+          "oklch(91% 0.02 90)",
+          "oklch(95% 0.02 90)",
+          "oklch(98% 0.02 90)"
+        ]
+      },
+      "factory-surface-raised": {
+        "role": "neutral",
+        "displayName": "Surface Raised (Cool)",
+        "canonical": "oklch(97% 0.002 270)",
+        "tonalRamp": [
+          "oklch(20% 0 0)",
+          "oklch(38% 0.002 270)",
+          "oklch(56% 0.002 270)",
+          "oklch(70% 0.002 270)",
+          "oklch(82% 0.002 270)",
+          "oklch(89% 0.002 270)",
+          "oklch(94% 0.002 270)",
+          "oklch(97% 0.002 270)"
+        ]
+      },
+      "factory-muted": {
+        "role": "neutral",
+        "displayName": "Muted Cream",
+        "canonical": "oklch(91% 0.018 90)",
+        "tonalRamp": [
+          "oklch(20% 0.01 90)",
+          "oklch(38% 0.015 90)",
+          "oklch(55% 0.018 90)",
+          "oklch(70% 0.018 90)",
+          "oklch(80% 0.018 90)",
+          "oklch(86% 0.018 90)",
+          "oklch(91% 0.018 90)",
+          "oklch(96% 0.012 90)"
+        ]
+      },
+      "factory-border": {
+        "role": "neutral",
+        "displayName": "Parchment Border",
+        "canonical": "oklch(83% 0.03 90)",
+        "tonalRamp": [
+          "oklch(22% 0.012 90)",
+          "oklch(40% 0.02 90)",
+          "oklch(55% 0.025 90)",
+          "oklch(68% 0.03 90)",
+          "oklch(78% 0.03 90)",
+          "oklch(83% 0.03 90)",
+          "oklch(90% 0.025 90)",
+          "oklch(96% 0.015 90)"
+        ]
+      },
+      "factory-border-cool": {
+        "role": "neutral",
+        "displayName": "Cool Border",
+        "canonical": "oklch(91% 0.005 270)",
+        "tonalRamp": [
+          "oklch(20% 0 0)",
+          "oklch(38% 0.003 270)",
+          "oklch(55% 0.004 270)",
+          "oklch(70% 0.005 270)",
+          "oklch(80% 0.005 270)",
+          "oklch(86% 0.005 270)",
+          "oklch(91% 0.005 270)",
+          "oklch(97% 0.003 270)"
+        ]
+      },
+      "factory-text": {
+        "role": "neutral",
+        "displayName": "Body Ink",
+        "canonical": "oklch(20% 0.025 50)",
+        "tonalRamp": [
+          "oklch(15% 0.015 50)",
+          "oklch(20% 0.025 50)",
+          "oklch(30% 0.035 50)",
+          "oklch(45% 0.04 50)",
+          "oklch(60% 0.035 50)",
+          "oklch(74% 0.025 50)",
+          "oklch(86% 0.015 50)",
+          "oklch(96% 0.008 50)"
+        ]
+      },
+      "factory-text-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(40% 0.025 50)",
+        "tonalRamp": [
+          "oklch(20% 0.015 50)",
+          "oklch(30% 0.02 50)",
+          "oklch(40% 0.025 50)",
+          "oklch(54% 0.025 50)",
+          "oklch(68% 0.022 50)",
+          "oklch(80% 0.018 50)",
+          "oklch(89% 0.012 50)",
+          "oklch(96% 0.006 50)"
+        ]
+      },
+      "factory-text-cool-muted": {
+        "role": "neutral",
+        "displayName": "Cool Muted",
+        "canonical": "oklch(48% 0.012 270)",
+        "tonalRamp": [
+          "oklch(20% 0.005 270)",
+          "oklch(32% 0.008 270)",
+          "oklch(48% 0.012 270)",
+          "oklch(62% 0.012 270)",
+          "oklch(75% 0.01 270)",
+          "oklch(85% 0.008 270)",
+          "oklch(92% 0.005 270)",
+          "oklch(97% 0.003 270)"
+        ]
+      },
+      "factory-bg-dark": {
+        "role": "neutral",
+        "displayName": "Deep Cocoa",
+        "canonical": "oklch(15% 0.015 35)",
+        "tonalRamp": [
+          "oklch(10% 0.008 35)",
+          "oklch(15% 0.015 35)",
+          "oklch(22% 0.022 35)",
+          "oklch(32% 0.028 35)",
+          "oklch(48% 0.032 35)",
+          "oklch(64% 0.026 35)",
+          "oklch(80% 0.018 35)",
+          "oklch(94% 0.008 35)"
+        ]
+      },
+      "factory-surface-dark": {
+        "role": "neutral",
+        "displayName": "Cocoa Surface",
+        "canonical": "oklch(20% 0.022 35)",
+        "tonalRamp": [
+          "oklch(12% 0.012 35)",
+          "oklch(20% 0.022 35)",
+          "oklch(30% 0.028 35)",
+          "oklch(42% 0.032 35)",
+          "oklch(56% 0.03 35)",
+          "oklch(70% 0.024 35)",
+          "oklch(84% 0.016 35)",
+          "oklch(95% 0.008 35)"
+        ]
+      },
+      "factory-text-dark": {
+        "role": "neutral",
+        "displayName": "Warm Cream Inverse",
+        "canonical": "oklch(92% 0.022 80)",
+        "tonalRamp": [
+          "oklch(28% 0.012 80)",
+          "oklch(45% 0.018 80)",
+          "oklch(62% 0.022 80)",
+          "oklch(75% 0.022 80)",
+          "oklch(83% 0.022 80)",
+          "oklch(88% 0.022 80)",
+          "oklch(92% 0.022 80)",
+          "oklch(97% 0.012 80)"
+        ]
+      },
+      "editor-code-bg": {
+        "role": "neutral",
+        "displayName": "Code Bed (Light)",
+        "canonical": "oklch(95% 0.005 60)",
+        "tonalRamp": [
+          "oklch(20% 0.005 60)",
+          "oklch(38% 0.005 60)",
+          "oklch(55% 0.005 60)",
+          "oklch(68% 0.005 60)",
+          "oklch(80% 0.005 60)",
+          "oklch(88% 0.005 60)",
+          "oklch(92% 0.005 60)",
+          "oklch(95% 0.005 60)"
+        ]
+      },
+      "editor-code-header-bg": {
+        "role": "secondary",
+        "displayName": "Code Header Wine",
+        "canonical": "oklch(30% 0.08 12)",
+        "tonalRamp": [
+          "oklch(15% 0.05 12)",
+          "oklch(22% 0.07 12)",
+          "oklch(30% 0.08 12)",
+          "oklch(42% 0.09 12)",
+          "oklch(58% 0.09 12)",
+          "oklch(74% 0.07 12)",
+          "oklch(87% 0.04 12)",
+          "oklch(96% 0.02 12)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page H1 in prose surfaces. Carries the factory's H1 stamp (Golden-Dim border-bottom)." },
+      "headline": { "displayName": "Headline", "purpose": "Section H2. Mid-density section breaks." },
+      "title": { "displayName": "Title", "purpose": "Subsection H3 and dense card titles." },
+      "body": { "displayName": "Body", "purpose": "Long-form reading body. Capped at 65–75ch on /docs/* routes." },
+      "label": { "displayName": "Label / Stamp", "purpose": "Uppercase, letter-spaced. Badge text, breadcrumb meta, table headers, H6 section labels." },
+      "mono": { "displayName": "Mono / Mechanism", "purpose": "Code, document IDs, oompa-annotation copy, telemetry. The system speaking." }
+    },
+    "shadows": [
+      {
+        "name": "editor-frame-lift",
+        "value": "0 1px 3px rgba(0, 0, 0, 0.10)",
+        "purpose": "Hairline ambient lift on the .editor-frame container only. The single in-system shadow. Forbidden on cards, buttons, popovers."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-page-fade",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "House easing. Used by .animate-page-in (factory-fade-in-up) at 500ms. Default for state and route transitions."
+      },
+      {
+        "name": "ease-spring-enter",
+        "value": "cubic-bezier(0.34, 1.3, 0.64, 1)",
+        "purpose": "Springy lift for room-group:hover (280ms). Slight overshoot, never elastic."
+      },
+      {
+        "name": "ease-gentle-settle",
+        "value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        "purpose": "Mouse-leave settle for room-group (360ms). Asymmetric pairing with ease-spring-enter avoids mechanical symmetric feel."
+      },
+      {
+        "name": "duration-fast",
+        "value": "200ms",
+        "purpose": "Toolbar buttons, link colors, hover state shifts."
+      },
+      {
+        "name": "duration-medium",
+        "value": "320ms",
+        "purpose": "Floor-plan tint fade-in, room-body stroke shifts."
+      },
+      {
+        "name": "duration-page",
+        "value": "500ms",
+        "purpose": "Page entrance fade-in-up. Disabled when prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (Publish)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The Choco Factory's primary CTA. Used for Publish, Save, Confirm — anywhere the seal goes down.",
+      "html": "<button class=\"ds-btn-primary\">PUBLISH</button>",
+      "css": ".ds-btn-primary { background: #B8922E; color: #FFFFFF; padding: 0.5rem 1rem; border: none; border-radius: 0.375rem; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; transition: background 200ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-primary:hover { background: #D4A843; opacity: 0.95; } .ds-btn-primary:focus-visible { outline: 2px solid #B8922E; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button (Cancel)",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action — Cancel, Dismiss. Transparent at rest; tonal cream tint on hover.",
+      "html": "<button class=\"ds-btn-ghost\">Cancel</button>",
+      "css": ".ds-btn-ghost { background: transparent; color: #5A4A3D; padding: 0.5rem 1rem; border: none; border-radius: 0.375rem; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; cursor: pointer; transition: background 200ms cubic-bezier(0.22, 1, 0.36, 1), color 200ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-ghost:hover { background: #E9E5D6; color: #2C1810; } .ds-btn-ghost:focus-visible { outline: 2px solid #B8922E; outline-offset: 2px; }"
+    },
+    {
+      "name": "Editor Toolbar Button",
+      "kind": "button",
+      "refersTo": "toolbar-button",
+      "description": "Square toolbar button used in the Tiptap editor toolbar. Hover and active states use the seal-tint (Golden Dim at 8–10% alpha).",
+      "html": "<button class=\"ds-toolbar-btn\" aria-label=\"Bold\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z\"/><path d=\"M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z\"/></svg></button>",
+      "css": ".ds-toolbar-btn { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; padding: 0; border-radius: 0.375rem; background: transparent; border: 1px solid transparent; color: #2C1810; cursor: pointer; transition: all 200ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-toolbar-btn:hover { background: rgba(184, 146, 46, 0.08); } .ds-toolbar-btn:focus-visible { outline: 2px solid #B8922E; outline-offset: 2px; } .ds-toolbar-btn[aria-pressed=\"true\"] { background: rgba(184, 146, 46, 0.10); border-color: #D4C9A8; }"
+    },
+    {
+      "name": "Verified Badge",
+      "kind": "chip",
+      "refersTo": "badge-verified",
+      "description": "Stamp-grade verification indicator. Used inline next to attested document titles, code samples, ledger entries.",
+      "html": "<span class=\"ds-badge-verified\">VERIFIED</span>",
+      "css": ".ds-badge-verified { display: inline-block; background: #C9923E; color: #FFFFFF; padding: 0.125rem 0.5rem; border-radius: 0.25rem; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.5; }"
+    },
+    {
+      "name": "Failed Badge",
+      "kind": "chip",
+      "refersTo": "badge-failed",
+      "description": "Verification failure indicator. Rose-wine, deliberately distinct from generic SaaS error red.",
+      "html": "<span class=\"ds-badge-failed\">FAILED</span>",
+      "css": ".ds-badge-failed { display: inline-block; background: #7A2E3A; color: #FFFFFF; padding: 0.125rem 0.5rem; border-radius: 0.25rem; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.5; }"
+    },
+    {
+      "name": "Attested Badge (Ledger Green)",
+      "kind": "chip",
+      "refersTo": "badge-verified",
+      "description": "TimeChain attestation indicator — reserved for cryptographic attestation rendered in UI. Never used as a generic success color.",
+      "html": "<span class=\"ds-badge-attested\">ATTESTED</span>",
+      "css": ".ds-badge-attested { display: inline-block; background: #2D6A4F; color: #FFFFFF; padding: 0.125rem 0.5rem; border-radius: 0.25rem; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.5; }"
+    },
+    {
+      "name": "Editor Frame",
+      "kind": "card",
+      "refersTo": "editor-frame",
+      "description": "The Tiptap editor container. The single surface in the system that carries an ambient shadow — the page-on-paper lift.",
+      "html": "<div class=\"ds-editor-frame\"><div class=\"ds-editor-content\" contenteditable=\"true\">Type to author a verified document…</div></div>",
+      "css": ".ds-editor-frame { display: flex; flex-direction: column; max-width: 768px; margin: 0 auto; background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10); } .ds-editor-frame:focus-within { outline: 2px solid #B8922E; outline-offset: 2px; } .ds-editor-content { padding: 1rem; min-height: 400px; outline: none; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1rem; line-height: 1.8; color: #1A1A1A; }"
+    },
+    {
+      "name": "Oompa Annotation Card",
+      "kind": "card",
+      "refersTo": "oompa-annotation",
+      "description": "The narrator card. Cocoa-the-bean speaks here — marginalia in mono. NOTE: legacy implementation uses border-left: 3px solid Factory Wine, which violates impeccable's side-stripe ban. This snippet renders the cleaned-up version with full hairline border + leading mascot glyph.",
+      "html": "<aside class=\"ds-oompa-annotation\"><span class=\"ds-oompa-glyph\" aria-hidden=\"true\">●</span><p>Cocoa observes that this code sample was last verified at block 0x4f12a9.</p></aside>",
+      "css": ".ds-oompa-annotation { display: flex; align-items: flex-start; gap: 0.5rem; background: #FFF8E7; border: 1px solid #D4C9A8; border-radius: 0.375rem; padding: 0.75rem; font-family: JetBrains Mono, ui-monospace, monospace; font-size: 0.75rem; line-height: 1.5; color: #8B5E3C; } .ds-oompa-annotation .ds-oompa-glyph { color: #6B2D3E; font-size: 0.875rem; line-height: 1; flex-shrink: 0; margin-top: 0.125rem; } .ds-oompa-annotation p { margin: 0; }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Standard text input — used in /search, dashboard filters, document title editing.",
+      "html": "<input class=\"ds-input\" type=\"search\" placeholder=\"Search the ledger…\" />",
+      "css": ".ds-input { width: 100%; background: #FFF8E7; border: 1px solid #D4C9A8; border-radius: 0.375rem; padding: 0.5rem 0.75rem; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; color: #2C1810; transition: border-color 200ms cubic-bezier(0.22, 1, 0.36, 1), background 200ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-input::placeholder { color: #5A4A3D; } .ds-input:focus-visible { outline: 2px solid #B8922E; outline-offset: 2px; border-color: #B8922E; } .ds-input::selection { background: rgba(184, 146, 46, 0.15); }"
+    },
+    {
+      "name": "Code Block",
+      "kind": "custom",
+      "refersTo": "editor-code-bg",
+      "description": "Verified code sample container with header bar (language label, copy button) and code body. The header carries a deep wine background, the body is a warm light-cream code bed.",
+      "html": "<figure class=\"ds-code-block\"><header class=\"ds-code-block-header\"><span>typescript</span><button class=\"ds-code-copy\" aria-label=\"Copy code\">COPY</button></header><pre class=\"ds-code-block-body\"><code>const docs = await choco.publish(draft);\nawait timechain.attest(docs);</code></pre></figure>",
+      "css": ".ds-code-block { display: flex; flex-direction: column; overflow: hidden; border-radius: 0.5rem; border: 1px solid #E8E5E3; background: #F5F2F0; margin: 1rem 0; } .ds-code-block-header { background: #5C2433; padding: 0.375rem 0.75rem; display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; } .ds-code-block-header span { font-family: JetBrains Mono, ui-monospace, monospace; font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: rgba(240, 232, 220, 0.8); } .ds-code-copy { background: transparent; border: none; color: rgba(240, 232, 220, 0.7); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.08em; cursor: pointer; padding: 0.125rem 0.375rem; border-radius: 0.25rem; transition: background 200ms cubic-bezier(0.22, 1, 0.36, 1), color 200ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-code-copy:hover { background: rgba(212, 168, 67, 0.18); color: #F0E8DC; } .ds-code-block-body { background: #F5F2F0; padding: 1rem; overflow-x: auto; font-family: JetBrains Mono, ui-monospace, monospace; font-size: 0.875rem; line-height: 1.6; color: #1A1A1A; margin: 0; tab-size: 2; } .ds-code-block-body code { background: transparent; border: none; padding: 0; color: inherit; font-size: inherit; }"
+    },
+    {
+      "name": "Dialog (Route-Based)",
+      "kind": "custom",
+      "refersTo": "editor-frame",
+      "description": "Dialog/modal surface — used sparingly. Per The Modal-Justification Rule, prefer inline editing, slide-overs, and route-based dialogs first. When used, the dialog is centered on a tinted scrim, carries the cream-surface paper feel, and ends with stamp-grade actions. No backdrop-blur (no glassmorphism).",
+      "html": "<div class=\"ds-dialog-scrim\" role=\"presentation\"><div class=\"ds-dialog\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"ds-dialog-title\"><header class=\"ds-dialog-header\"><h2 id=\"ds-dialog-title\" class=\"ds-dialog-title\">Publish to the ledger?</h2><p class=\"ds-dialog-meta\">DOC-0042 · 1,847 words</p></header><div class=\"ds-dialog-body\"><p>Once published, this entry is signed by the TimeChain. Drafts can be edited; published entries are amended via supersedes.</p></div><footer class=\"ds-dialog-actions\"><button class=\"ds-btn-ghost\">Cancel</button><button class=\"ds-btn-primary\">PUBLISH</button></footer></div></div>",
+      "css": ".ds-dialog-scrim { position: fixed; inset: 0; background: rgba(28, 18, 16, 0.55); display: flex; align-items: center; justify-content: center; padding: 1rem; z-index: 50; animation: ds-scrim-in 200ms cubic-bezier(0.22, 1, 0.36, 1); } @keyframes ds-scrim-in { from { opacity: 0; } to { opacity: 1; } } .ds-dialog { background: #FFF8E7; border: 1px solid #D4C9A8; border-radius: 0.5rem; max-width: 480px; width: 100%; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10); animation: ds-dialog-in 320ms cubic-bezier(0.22, 1, 0.36, 1); } @keyframes ds-dialog-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } } .ds-dialog-header { padding: 1.25rem 1.5rem 0.75rem; } .ds-dialog-title { margin: 0; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1.25rem; font-weight: 600; line-height: 1.4; letter-spacing: -0.01em; color: #2C1810; } .ds-dialog-meta { margin: 0.25rem 0 0; font-family: JetBrains Mono, ui-monospace, monospace; font-size: 0.75rem; color: #5A4A3D; } .ds-dialog-body { padding: 0.5rem 1.5rem 1rem; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.9375rem; line-height: 1.6; color: #2C1810; } .ds-dialog-body p { margin: 0; } .ds-dialog-actions { display: flex; justify-content: flex-end; gap: 0.5rem; padding: 0.75rem 1.5rem 1rem; border-top: 1px solid #D4C9A8; } @media (prefers-reduced-motion: reduce) { .ds-dialog-scrim, .ds-dialog { animation: none; } }"
+    },
+    {
+      "name": "Floor-Plan SVG Room",
+      "kind": "custom",
+      "refersTo": "editor-frame",
+      "description": "The factory floor-plan SVG room group — the system's signature spatial component. Used to navigate the dashboard's room/factory metaphor. Hover springs up by 3px, stroke brightens to Golden Seal, tint overlay fades in. Asymmetric ease (springy enter, gentle exit) avoids mechanical symmetry.",
+      "html": "<svg class=\"ds-floor-plan\" viewBox=\"0 0 320 240\" role=\"img\" aria-label=\"Factory floor plan — Verifier room\"><g class=\"ds-room-group\" transform=\"translate(40 40)\"><rect class=\"ds-room-tint\" x=\"0\" y=\"0\" width=\"240\" height=\"160\" rx=\"8\" fill=\"#D4A843\"/><rect class=\"ds-room-body\" x=\"0\" y=\"0\" width=\"240\" height=\"160\" rx=\"8\" fill=\"#FFF8E7\" stroke=\"#D4C9A8\" stroke-width=\"1.5\"/><circle class=\"ds-room-status-ring\" cx=\"24\" cy=\"24\" r=\"6\" fill=\"#2D6A4F\"/><text x=\"24\" y=\"56\" font-family=\"Inter, ui-sans-serif, system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#2C1810\">Verifier</text><text x=\"24\" y=\"76\" font-family=\"JetBrains Mono, ui-monospace, monospace\" font-size=\"11\" fill=\"#5A4A3D\">attested · 12 docs</text></g></svg>",
+      "css": ".ds-floor-plan { width: 100%; max-width: 320px; height: auto; } .ds-room-group { transform-box: fill-box; transform-origin: center center; cursor: pointer; transition: transform 360ms cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 360ms cubic-bezier(0.25, 0.46, 0.45, 0.94); } .ds-room-group:hover, .ds-room-group:focus-visible { transition: transform 280ms cubic-bezier(0.34, 1.3, 0.64, 1), opacity 280ms cubic-bezier(0.34, 1.3, 0.64, 1); transform: translateY(-3px); outline: none; } .ds-room-group .ds-room-body { transition: stroke 320ms cubic-bezier(0.25, 0.46, 0.45, 0.94), stroke-width 320ms cubic-bezier(0.25, 0.46, 0.45, 0.94); } .ds-room-group:hover .ds-room-body, .ds-room-group:focus-visible .ds-room-body { stroke: #D4A843; stroke-width: 2.5; } .ds-room-group .ds-room-tint { opacity: 0; transition: opacity 320ms cubic-bezier(0.25, 0.46, 0.45, 0.94); } .ds-room-group:hover .ds-room-tint, .ds-room-group:focus-visible .ds-room-tint { opacity: 0.10; } .ds-room-group .ds-room-status-ring { transition: opacity 320ms ease; } .ds-room-group:hover .ds-room-status-ring { opacity: 0.7; } @media (prefers-reduced-motion: reduce) { .ds-room-group, .ds-room-group .ds-room-body, .ds-room-group .ds-room-tint, .ds-room-group .ds-room-status-ring { transition: none !important; } .ds-room-group:hover, .ds-room-group:focus-visible { transform: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Choco Factory Ledger",
+    "overview": "The system reads like a warm reference book that turns out to also be a working compiler. Every published page is a stamped entry in the factory's ledger: chocolate ink on warm cream, with golden seals where the verifier signed, wine-red where the heading deserves weight, and Cocoa the bean appearing in the margins as a recurring narrator. The visual language is editorial and tonal — type, paper, and ink do the work; chrome retreats. This is not the SaaS-dashboard reflex. Density is medium-low. Long-form reading is sacred; the docs body type and the editor's authoring surface share the same ink budget. Color is committed (not restrained) — the warm cream #FEFAE0 carries 60–80% of any given screen as the page itself, with chocolate #3C1518 as the ink and golden #D4A843 as the seal. Verification status (ledger-green for attested, wine for needs-review, badge-failed for broken) is rendered as type and structure, never as fintech glitter. This system explicitly rejects: generic devtools dark + electric-blue/purple gradient (the category-reflex look); AI-startup glassmorphic heroes with floating orbs and animated mesh; crypto/web3 neon-on-black, even though the TimeChain ledger is cryptographically attested; Notion/Confluence wiki softness with pastel emoji headers and friendly-blob illustrations.",
+    "keyCharacteristics": [
+      "Warm-cream paper, chocolate ink, golden seals — committed palette, not Restrained.",
+      "Light-mode-first; dark mode is a deep-cocoa shift (#1C1210), never a default fallback.",
+      "Flat surfaces with tonal layering — depth via warm tone shifts, not shadows.",
+      "Editorial typographic hierarchy with serif-grade letter-spacing tightening on display.",
+      "Mascot has a voice — Cocoa the bean appears in margins as oompa-annotation cards in mono type.",
+      "Verification is rendered (ledger-green, badge-verified, attestation chain), not claimed."
+    ],
+    "rules": [
+      { "name": "The Cream Paper Rule", "body": "Every primary surface defaults to factory-bg (#FEFAE0) in light mode and factory-bg-dark (#1C1210) in dark. Pure #FFF and pure #000 are forbidden — every neutral is tinted toward chocolate, even at the extremes. If a designer reaches for #FFFFFF, redo the surface.", "section": "colors" },
+      { "name": "The One Seal Rule", "body": "Golden Seal (#D4A843) appears on ≤15% of any given screen. It is the verified-stamp color and the primary-emphasis color. If it covers more than that, the surface has lost its seal economy — demote uses to Golden Dim or remove.", "section": "colors" },
+      { "name": "The Ledger-Green Means Signed Rule", "body": "#2D6A4F is reserved for cryptographic attestation rendered in the UI: TimeChain ticks, verified-publication indicators, signed-by markers. Forbidden as a generic success color, a 'save complete' toast, or a chart hue. If something is green, it has been signed.", "section": "colors" },
+      { "name": "The Mono-As-Mechanism Rule", "body": "Mono type signals the system speaking — code, identifiers, annotations, telemetry. It is never used decoratively. If a piece of UI copy is in mono and is not a code/ID/annotation surface, rewrite it in sans.", "section": "typography" },
+      { "name": "The 65ch Rule", "body": "On any long-form prose route (/docs/*, published documents, factory-prose containers), body type wraps at 65–75ch. Wider columns are forbidden — long-form reading is sacred (per PRODUCT.md).", "section": "typography" },
+      { "name": "The Inter-Only Rule", "body": "Display, headline, title, body, and label all share Inter as their family. Hierarchy comes from weight + size + letter-spacing, never from a second display family. Do not introduce a serif display, a brand wordmark face, or a 'personality' font without a decision-doc — a font addition is a north-star change.", "section": "typography" },
+      { "name": "The Tonal-Layering Rule", "body": "Depth is rendered by stepping warm tones, not by box-shadow. To raise a surface above the page, change its background tone (cream → cream-surface → card-bg), not its shadow. If you need a shadow to make a card feel 'above,' you are in the wrong system.", "section": "elevation" },
+      { "name": "The No-Glow Rule", "body": "Hover and focus do not glow. Hover uses tonal shift (background warms one step) or translation (translateY(-2..3px)); focus uses a 2px outline tinted toward --editor-focus-ring (Golden Dim). Glassmorphic blurs, glow halos, ambient mesh backgrounds — forbidden.", "section": "elevation" },
+      { "name": "The Asymmetric-Easing Rule", "body": "Enter and exit transitions never share a curve. Enters use a slight overshoot (cubic-bezier(0.34, 1.3, 0.64, 1) at 280ms — the room-spring); exits use a gentler settle (cubic-bezier(0.25, 0.46, 0.45, 0.94) at 360ms). The asymmetry avoids the mechanical feel of symmetric ease-in-out and is load-bearing for the factory's living quality.", "section": "elevation" },
+      { "name": "The Modal-Justification Rule", "body": "A modal must justify itself against three alternatives: inline editing, slide-overs, and route-based dialogs. If any of those fits the task, use it instead. Modals are appropriate for irreversible operations (publish, delete, attest), authentication, and explicit confirmations — almost nothing else.", "section": "components" }
+    ],
+    "dos": [
+      "Do default every primary surface to Warm Cream (#FEFAE0) light / Deep Cocoa (#1C1210) dark. Pure #FFF and pure #000 are forbidden.",
+      "Do reserve Golden Seal (#D4A843) for ≤15% of any screen — verified states, primary CTAs, accent emphasis. Demote heavier uses to Golden Dim.",
+      "Do use Ledger Green (#2D6A4F) only for cryptographic attestation rendered in UI. Never as a generic success color.",
+      "Do render verification status as a typographic stamp (label-grade, uppercase, badge-shaped), not as an icon-only checkmark.",
+      "Do use JetBrains Mono wherever the system speaks: code, document IDs, annotations, telemetry. Sans everywhere else.",
+      "Do convey depth through warm tonal layering (cream → cream-surface → card-bg), not shadows.",
+      "Do cap long-form body at 65–75ch on /docs/* routes. Body must be ≥16px rendered.",
+      "Do announce verification status, presence, and attestation as screen-reader text, not only as color.",
+      "Do route page entrances through factory-fade-in-up (500ms cubic-bezier(0.22, 1, 0.36, 1)); honor prefers-reduced-motion.",
+      "Do tint focus rings toward Golden Dim with 2px offset. Always visible."
+    ],
+    "donts": [
+      "Don't use #FFFFFF or #000000 for any surface, text, or border. Every neutral is tinted toward chocolate.",
+      "Don't ship gradient text. The legacy .golden-shimmer (background-clip: text on a linear gradient) violates impeccable's absolute ban — flagged for cleanup. Use solid Golden Seal and emphasize via weight/size.",
+      "Don't ship side-stripe colored borders greater than 1px. The legacy .prose-factory h2 (3px Golden left edge), h3 (2px Golden Dim left edge), .oompa-annotation (3px Wine left edge), and .editor-blockquote (3px Wine left edge) all violate the absolute ban — flagged for cleanup. Replace with full hairline borders, leading numbers/glyphs, mascot avatars, or background tint blocks.",
+      "Don't introduce glassmorphism — backdrop-blur, frosted glass cards, glow halos, animated mesh backgrounds. AI-startup hero clichés are forbidden (per PRODUCT.md anti-references).",
+      "Don't use electric blue / purple / cyan gradient as accent or emphasis. The category-reflex devtools palette is forbidden — Choco's accent is gold, not neon (per PRODUCT.md anti-references).",
+      "Don't render verification with crypto/web3 chrome: holographic gradients, neon green, 'transaction confirmed' toasts. The TimeChain is cryptographic; the UI is editorial (per PRODUCT.md anti-references).",
+      "Don't introduce pastel emoji block headers or rounded-everything friendly-blob illustrations — the wiki softness reflex (per PRODUCT.md anti-references).",
+      "Don't use modal-as-first-thought. Exhaust inline editing, slide-overs, route-based dialogs, and progressive disclosure first. A modal must justify itself.",
+      "Don't stack identical card grids (icon + heading + text repeated endlessly). The SaaS-cliché grid is forbidden.",
+      "Don't ship the hero-metric template (big number + small label + supporting stats + gradient accent). Find a better affordance.",
+      "Don't use shadows for depth. Tonal layering only. The single box-shadow: 0 1px 3px rgba(0,0,0,0.1) on .editor-frame is the system's exception — do not extend it.",
+      "Don't introduce a second display family. Inter carries display through label. A new face is a north-star change, not a refactor.",
+      "Don't animate CSS layout properties (width, height, top, left, padding). Use transform and opacity.",
+      "Don't use bounce or elastic easing. Ease out via exponential curves (cubic-bezier(0.22, 1, 0.36, 1) is the house easing)."
+    ]
+  }
+}
