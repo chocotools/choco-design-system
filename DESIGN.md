@@ -10,6 +10,8 @@ colors:
   golden: "#D4A843"
   golden-dim: "#B8922E"
   golden-light: "#F2C94C"
+  golden-ink: "#845B00"
+  golden-ink-dark: "#D2A249"
   factory-warm: "#A44200"
   ledger-green: "#2D6A4F"
   badge-verified: "#C9923E"
@@ -80,12 +82,12 @@ spacing:
 components:
   button-primary:
     backgroundColor: "{colors.golden-dim}"
-    textColor: "#FFFFFF"
+    textColor: "{colors.factory-heading}"
     rounded: "{rounded.sm}"
     padding: "0.5rem 1rem"
   button-primary-hover:
     backgroundColor: "{colors.golden}"
-    textColor: "#FFFFFF"
+    textColor: "{colors.factory-heading}"
   button-ghost:
     backgroundColor: "transparent"
     textColor: "{colors.factory-text-muted}"
@@ -114,13 +116,13 @@ components:
     typography: "{typography.mono}"
   badge-verified:
     backgroundColor: "{colors.badge-verified}"
-    textColor: "#FFFFFF"
+    textColor: "{colors.factory-heading}"
     rounded: "{rounded.xs}"
     padding: "0.125rem 0.5rem"
     typography: "{typography.label}"
   badge-failed:
     backgroundColor: "{colors.badge-failed}"
-    textColor: "#FFFFFF"
+    textColor: "{colors.factory-bg}"
     rounded: "{rounded.xs}"
     padding: "0.125rem 0.5rem"
     typography: "{typography.label}"
@@ -155,7 +157,8 @@ A committed warm palette built around three roles: chocolate ink, golden seal, w
 - **Deep Chocolate** (`#3C1518` — `oklch(22% 0.05 18)`): The primary brand color. Used as headline ink, factory-mythology surfaces, the deepest text contrast against cream. Reads as authoritative, not aggressive.
 - **Choco Factory Heading** (`#2C1810` — `oklch(20% 0.025 50`)): Heading and primary body text. Slightly warmer/lighter than Deep Chocolate so headings layer cleanly on cream paper.
 - **Golden Seal** (`#D4A843` — `oklch(73% 0.13 80)`): The signature accent. Stamped onto verified states, primary CTAs, accent borders on the floor-plan hover, link emphasis. The seal of attestation. Used at ≤15% of any given screen — its rarity is the point.
-- **Golden Dim** (`#B8922E` — `oklch(64% 0.13 80)`): The default CTA background and link color. Quieter than the Seal so it can carry button-frequent surfaces without overwhelming.
+- **Golden Dim** (`#B8922E` — `oklch(64% 0.13 80)`): The default CTA background, carrying Factory Heading text. Quieter than the Seal so it can carry button-frequent surfaces without overwhelming. **Not a text, link or focus colour on light surfaces**: on Warm Cream it measures 2.8:1, below both AA thresholds. Use Golden Ink for those.
+- **Golden Ink** (`#845B00` — `oklch(50% 0.11 80)`, step 3 of the Golden Dim ramp): Link text and the focus ring on light surfaces. The same hue as Golden Dim, dark enough to read: at least 4.6:1 on every light surface. **Golden Ink Dark** (`#D2A249` — `oklch(74% 0.12 80)`, step 5) does the same job in dark mode, at least 7.2:1 on the dark surfaces.
 
 ### Secondary
 - **Factory Wine** (`#6B2D3E` — `oklch(35% 0.09 10)`): Editorial gravitas accent. Blockquote borders, table headers, H6 labels, narrator emphasis. The "literary" voice of the system.
@@ -191,6 +194,22 @@ A committed warm palette built around three roles: chocolate ink, golden seal, w
 
 **The Ledger-Green Means Signed Rule.** `#2D6A4F` is reserved for *cryptographic attestation rendered in the UI*: TimeChain ticks, verified-publication indicators, signed-by markers. Forbidden as a generic success color, a "save complete" toast, or a chart hue. If something is green, it has been signed.
 
+**The Measured Contrast Rule.** A text or focus colour is chosen by measurement, never by eye. Text meets 4.5:1 and focus rings and other non-text indicators meet 3:1 (WCAG 2.2 AA, 1.4.3 and 1.4.11) against **every** surface they can sit on, not just the page background. The pairs below are measured; each figure is the worst case across this file's hex value and DESIGN.json's OKLCH `canonical`, which do not always agree (see the note after the table).
+
+| Foreground | Background | Use | Worst case |
+|---|---|---|---|
+| Golden Ink `#845B00` | Warm Cream, Cream Surface, Code Background, Muted | link text, focus ring (light) | 4.63:1 (on Muted), 5.22:1 (on Code Background) |
+| Golden Ink Dark `#D2A249` | Deep Cocoa, Cocoa Surface | link text, focus ring (dark) | 7.20:1 |
+| Factory Heading `#2C1810` | Golden Dim | primary button | 4.95:1 |
+| Factory Heading | Golden Seal | primary button hover | 6.98:1 |
+| Factory Heading | Badge Verified | verified badge | 5.51:1 |
+| Warm Cream `#FEFAE0` | Badge Failed | failed badge | 8.44:1 |
+| Warm Cream | Ledger Green | attested badge | 5.85:1 |
+
+These pairs fail and are not used: white on Golden Dim (2.92:1), white on Golden Seal (2.21:1), white on Badge Verified (2.74:1), Golden Dim as text or focus on Warm Cream (2.78:1) or Code Background (2.62:1).
+
+*Note:* for most colours, the hex value in this file's frontmatter and DESIGN.json's OKLCH `canonical` are visibly different colours (Golden Dim: `#B8922E` here, `oklch(64% 0.13 80)` = `#B5820C` there). Consumers that read DESIGN.json render the OKLCH value. Which representation is authoritative is an open question; until it is answered, every contrast figure above is checked against both.
+
 ## 3. Typography
 
 **Display Font:** Inter (with `ui-sans-serif, system-ui, sans-serif` fallback).
@@ -203,7 +222,7 @@ A committed warm palette built around three roles: chocolate ink, golden seal, w
 - **Display** (700, `2rem` / `clamp` to `1.5rem` mobile, `1.25` line-height, `-0.03em` letter-spacing): Page-level H1 in prose surfaces (`.prose-factory h1`). Carries a `2px solid Golden Dim` underline border-bottom — the factory's H1 stamp. *(See Don'ts for the heading stripe pattern.)*
 - **Headline** (600, `1.5rem`, `1.3` line-height, `-0.015em` letter-spacing): Section H2. Carries a `3px solid Golden` left-edge accent in legacy code — flagged for cleanup.
 - **Title** (600, `1.25rem`, `1.4` line-height, `-0.01em`): Subsection H3.
-- **Body** (400, `1rem`, `1.8` line-height): The reading body. Line length must be capped at **65–75ch** on `/docs/*` long-form routes. Drops to `0.9375rem` at <640px to retain margins. Never below `16px` rendered, per accessibility (FEAT-054).
+- **Body** (400, `1rem`, `1.8` line-height): The reading body. Line length must be capped at **65–75ch** on `/docs/*` long-form routes. Never below `16px` rendered, per accessibility (FEAT-054); keep margins at <640px by reducing padding, not type size.
 - **Label** (600, `0.8125rem`, `1.5` line-height, `0.05em` letter-spacing, uppercase): H6 tags, table headers, badge text, breadcrumb meta. The system's "stamp" voice — small, spaced, authoritative.
 - **Mono Code** (400, `0.875rem`, `1.6` line-height): Code blocks, inline code, document IDs, oompa-annotation copy.
 
@@ -228,7 +247,7 @@ Hover-state lifts use `transform: translateY(-3px)` (the floor-plan room hover) 
 
 **The Tonal-Layering Rule.** Depth is rendered by stepping warm tones, not by `box-shadow`. To raise a surface above the page, change its background tone (cream → cream-surface → card-bg), not its shadow. If you need a shadow to make a card feel "above," you are in the wrong system.
 
-**The No-Glow Rule.** Hover and focus do not glow. Hover uses tonal shift (background warms one step) or translation (`translateY(-2..3px)`); focus uses a 2px outline tinted toward `--editor-focus-ring` (`Golden Dim`). Glassmorphic blurs, glow halos, ambient mesh backgrounds — forbidden.
+**The No-Glow Rule.** Hover and focus do not glow. Hover uses tonal shift (background warms one step) or translation (`translateY(-2..3px)`); focus uses a 2px `Golden Ink` outline (`Golden Ink Dark` in dark mode). Glassmorphic blurs, glow halos, ambient mesh backgrounds — forbidden.
 
 **The Asymmetric-Easing Rule.** Enter and exit transitions never share a curve. Enters use a slight overshoot (`cubic-bezier(0.34, 1.3, 0.64, 1)` at 280ms — the room-spring); exits use a gentler settle (`cubic-bezier(0.25, 0.46, 0.45, 0.94)` at 360ms). The asymmetry avoids the mechanical feel of symmetric ease-in-out and is load-bearing for the factory's living quality.
 
@@ -236,9 +255,9 @@ Hover-state lifts use `transform: translateY(-3px)` (the floor-plan room hover) 
 
 ### Buttons
 - **Shape:** Subtly rounded (`0.375rem` `rounded.sm`).
-- **Primary (Publish, Save):** `Golden Dim` (`#B8922E`) background, `#FFFFFF` text, `0.5rem 1rem` padding, body weight 500. Hover: shifts to `Golden` (`#D4A843`) at `opacity: 0.9` — the seal "brightens." No shadow, no scale.
+- **Primary (Publish, Save):** `Golden Dim` (`#B8922E`) background, `Factory Heading` (`#2C1810`) text (4.9:1; white text measures 2.9:1 and fails AA), `0.5rem 1rem` padding, body weight 500. Hover: shifts to `Golden` (`#D4A843`) at `opacity: 0.9` — the seal "brightens." No shadow, no scale.
 - **Ghost (Cancel, Secondary actions):** Transparent background, `Muted Ink` text. Hover: `Muted Cream` background tint, text shifts to `Body Ink`. The ghost button never grows a border at rest.
-- **Focus:** 2px `Golden Dim` outline, `2px` offset. Always visible on `:focus-visible`.
+- **Focus:** 2px `Golden Ink` outline (`Golden Ink Dark` in dark mode), `2px` offset. Always visible on `:focus-visible`.
 
 ### Toolbar Buttons (Editor)
 - **Shape:** `2rem × 2rem` square with `0.375rem` radius.
@@ -281,7 +300,7 @@ The system's narrator card. Cocoa-the-bean speaks here.
 
 ### Inputs / Fields
 - **Style:** `1px Parchment Border` (warm surfaces) or `1px Cool Border` (chrome surfaces). Background `factory-surface` or `editor-content-bg`. Radius `0.375rem`.
-- **Focus:** 2px `Golden Dim` outline, 2px offset. The focus ring is the only state shift — no inner glow.
+- **Focus:** 2px `Golden Ink` outline (`Golden Ink Dark` in dark mode), 2px offset. The focus ring is the only state shift — no inner glow.
 - **Selection:** `rgba(184, 146, 46, 0.15)` — a faint seal-wash.
 - **Placeholder:** `Muted Ink` (warm) or `Cool Muted` (cool).
 
@@ -293,9 +312,9 @@ The system's narrator card. Cocoa-the-bean speaks here.
 
 ### Badges (Verification)
 The system's stamp vocabulary. Type-driven, never icon-only.
-- **Verified:** `Badge Verified` (`#C9923E`) background, white text, label-grade type. Forbidden to use a green checkmark icon — verification status is rendered as a stamp, not a tick.
-- **Failed:** `Badge Failed` (`#7A2E3A`) background, white text. Forbidden to render this as red — `Badge Failed` is rose-wine, deliberately distinct from generic SaaS error red.
-- **Attested (TimeChain-rendered):** `Ledger Green` background, white text. Reserved for *cryptographic attestation surfaced in UI* — see The Ledger-Green Means Signed Rule.
+- **Verified:** `Badge Verified` (`#C9923E`) background, `Factory Heading` text (5.5:1; white measures 2.7:1 and fails AA), label-grade type. Forbidden to use a green checkmark icon — verification status is rendered as a stamp, not a tick.
+- **Failed:** `Badge Failed` (`#7A2E3A`) background, `Warm Cream` text (8.4:1). Forbidden to render this as red — `Badge Failed` is rose-wine, deliberately distinct from generic SaaS error red.
+- **Attested (TimeChain-rendered):** `Ledger Green` background, `Warm Cream` text (5.9:1). Reserved for *cryptographic attestation surfaced in UI* — see The Ledger-Green Means Signed Rule.
 
 ### Code Blocks
 - **Container:** `1px Cool Border`, `0.5rem` radius.
@@ -315,7 +334,7 @@ The system's stamp vocabulary. Type-driven, never icon-only.
 - **Do** cap long-form body at **65–75ch** on `/docs/*` routes. Body must be ≥`16px` rendered.
 - **Do** announce verification status, presence, and attestation as **screen-reader text**, not only as color.
 - **Do** route page entrances through `factory-fade-in-up` (`500ms cubic-bezier(0.22, 1, 0.36, 1)`); honor `prefers-reduced-motion`.
-- **Do** tint focus rings toward **Golden Dim** with `2px` offset. Always visible.
+- **Do** draw focus rings in **Golden Ink** (light) / **Golden Ink Dark** (dark) with `2px` offset. Always visible, and at least 3:1 against every surface they sit on.
 
 ### Don't:
 - **Don't** use `#FFFFFF` or `#000000` for any surface, text, or border. Every neutral is tinted toward chocolate.
